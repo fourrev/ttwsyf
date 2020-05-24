@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>object</h1>
+  <h2>create</h2>
+  <script>
+    var field = {
+      "money1" : "baseball",
+      "money2" : "basketball"
+    };
+    field["money3 important"] = "cartoon"
+    // document.write(field.money1)
+    document.write("money1 : "+field.money1+"<br>");
+    document.write("money2 : "+field.money2+"<br>");
+    document.write("money3 : "+field["money3 important"]+"<br>");
+
+    console.log(field) // ok
+  </script>
+  <h2>iterate </h2>
+  <script>
+    // for(var key in field) {
+    //   value = field[key];
+    //   document.write(key+":"+value+"<br>");
+    // }
+  </script>
+
+  <h2>property & method--</h2>
+  <script>
+    field.showAll = function(){
+      for(var key in field) {
+        document.write(key+' : '+field[key]+'<br>');
+      }
+    }
+    field.showAll();
+  </script>
+
+  <!-- <h2>Property & Method</h2>
+  <script>
+    field.showAll = function(){
+      for(var key in this) {
+        document.write(key+' : '+this[key]+'<br>');
+      }
+    }
+    field.showAll();
+  </script> -->
+
+</body>
+</html>

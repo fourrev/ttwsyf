@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <title> The Truth </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function NightDayHandler(self){
+      var target = document.querySelector('body');
+      if(this.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day' ;
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night' ;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>
+    <a href="1.html"> The Truth Will Set You Free </a> <br>
+  </h1>
+  <div id="grid">
+    <div id="section">
+      <!-- <ol id="section2"> -->
+      <input type='button' value='night' onclick="
+      NightDayHandler(this);
+      ">
+      <!-- var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+      links[i].style.color = 'blue';
+      i = i + 1;
+    } -->
+    <ol>
+      <li> <a href="HTML.html" >HTML </a></li>
+      <li> <a href="CSS.html" >CSS</a> </li>
+      <li> <a href="JavaScript.html">JavaScript </a></li>
+    </ol>
+  </div>
+  <div id="rcolst">
+    sWeb usually refers to:
+    Spider web, a silken structure created by the animal
+    World Wide Web or the Web, an Internet-based hypertext system
+    Web or WEB may also refer to
+    <p>
+      <div id="image">
+        <img src="universe.jpg" width="70%">
+      </div>
+    </p>
+  </div>
+</div>
+<div class="copyright">
+  @Copyright by ttwsyf
+</div>
+</body>
+<!-- <script> -->
+<!-- // console.log(document.querySelector('a')); -->
+<!-- // console.log(document.querySelectorAll('a')); -->
+<!-- </script> -->
+<!-- <div id="sec4"> @copyright by ttwsyf </div> -->
